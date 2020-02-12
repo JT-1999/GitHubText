@@ -41,6 +41,7 @@ public class DetailedActivity extends AppCompatActivity {
         mTextViewcontent=findViewById(R.id.tv_content);
         mreturn=findViewById(R.id.detailed_return);
         try {
+
             MyTask myTask=new MyTask();
             myTask.execute();
         }
