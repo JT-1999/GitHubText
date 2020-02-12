@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login"
+    >
+
+    <TextView
+    android:id="@+id/login_zk"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="180dp"
+    android:textStyle="bold"
+    android:text="浙科"
+    android:textSize="120px"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login_zj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="之家"
+        android:textSize="120px"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/login_zk"
+        app:layout_constraintTop_toBottomOf="@id/login_zk"
+         />
+    <Button
+        android:id="@+id/login_bt_mima"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_zj"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/button_circle_shape"
+        android:textStyle="bold"
+        android:textSize="64px"
+        android:text="手机号密码登录"
+        android:textColor="@color/white"
+        style="?android:attr/borderlessButtonStyle"
+        />
+    <Button
+        android:id="@+id/login_bt_yanzhengma"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_bt_mima"
+        android:textStyle="bold"
+        android:textSize="64px"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_circle_shape_grey"
+        android:textColor="@color/black"
+        android:text="验证码登录"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

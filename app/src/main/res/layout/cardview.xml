@@ -1,0 +1,45 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="24dp"
+        android:clipChildren="false"
+        app:cardElevation="8dp">
+        <ImageView
+            android:id="@+id/myimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="安卓答辩"
+            android:textSize="60px"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"
+            android:textColor="@color/white"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="安卓答辩"
+            android:textSize="100px"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:paddingTop="50dp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

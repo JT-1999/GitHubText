@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/topbuttonleft"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/email"
+        style="@style/Widget.AppCompat.Button.Borderless"
+         />
+
+    <Button
+        android:id="@+id/topbuttonright"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/settings"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+
+    <Button
+        android:id="@+id/users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        tools:text="我是一个用户"
+        android:textSize="75px"
+        app:layout_constraintTop_toBottomOf="@+id/topbuttonleft"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="50dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+
+    <ImageView
+        android:id="@+id/users_imageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:srcCompat="@drawable/dbl"
+        app:layout_constraintTop_toTopOf="@id/users"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="50dp"
+         />
+
+    <Button
+        android:id="@+id/bt_shoucang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintTop_toBottomOf="@id/users_imageView"
+        app:layout_constraintLeft_toLeftOf="@id/users"
+        style="?android:attr/borderlessButtonStyle"
+
+         />
+
+    <Button
+        android:id="@+id/bt_shoucang2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="收藏"
+        app:layout_constraintTop_toBottomOf="@id/bt_shoucang"
+        app:layout_constraintLeft_toLeftOf="@id/bt_shoucang"
+        style="?android:attr/borderlessButtonStyle"
+        />
+
+    <Button
+        android:id="@+id/bt_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        app:layout_constraintTop_toTopOf="@id/bt_shoucang"
+        app:layout_constraintRight_toRightOf="@id/users_imageView"
+        style="?android:attr/borderlessButtonStyle"
+         />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好友"
+        app:layout_constraintTop_toTopOf="@id/bt_shoucang2"
+        app:layout_constraintLeft_toLeftOf="@id/bt_friends"
+
+        style="?android:attr/borderlessButtonStyle"/>
+
+
+
+    <Button
+        android:id="@+id/bt_pingzheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="凭证"
+        app:layout_constraintTop_toBottomOf="@id/bt_shoucang2"
+        app:layout_constraintLeft_toLeftOf="@id/bt_shoucang2"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_marginTop="30dp"
+        />
+    <Button
+        android:id="@+id/bt_fabu"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/plus"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
